@@ -67,7 +67,7 @@ npm run clean && npm run build
 <iframe src="htttps://baidu.com"></iframe>
 ```
 
-### API
+### Attributes
 
 ### no lazyload
 
@@ -87,7 +87,7 @@ Or
 <img no-lazy src="https://abc.com/def.jpg" alt="def">
 ```
 
-### Placeholder image for specific element
+### Placeholder image
 
 Supports <url>/<gradient>/blurhash.
 
@@ -100,5 +100,19 @@ Supports <url>/<gradient>/blurhash.
 Or use `placeholderimg` attribute
 
 ```markdown
-<img src="https://pic.imgdb.cn/item/6588ec0ac458853aefce5702.jpg" data-placeholderimg="blurhash:L142;zITIA?wt8adadofjFjbbXk9">
+<img src="https://pic.imgdb.cn/item/65558655c458853aef97be96.jpg" data-placeholderimg="blurhash:Lb0V#qelf,flg+e-f6flg4g4f5fl">
+```
+
+### Aspect-ratio
+
+`$aspect-ratio=...=aspect-ratio` in `[]`
+
+```markdown
+![$aspect-ratio=3/2=aspect-ratio](https://pic.imgdb.cn/item/65558655c458853aef97be96.jpg)
+```
+
+Or use `style`
+
+```markdown
+<img src="https://pic.imgdb.cn/item/65558655c458853aef97be96.jpg" style="aspect-ratio: 3/2">
 ```
