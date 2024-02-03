@@ -6,7 +6,7 @@
 
 \*for browsers not support `Intersection Observer` , lazy load is not woking due to I did not integrate polyfill in this plugin to avoid unnecessary script size.
 
-**[DEMO](https://lynanbreeze.github.io/hexo-lazyload-element/)**
+**[DEMO PAGE](https://lynanbreeze.github.io/hexo-lazyload-element/)**
 ![](https://i.imgur.com/QwlUMb2.gif)
 
 ## Features
@@ -15,7 +15,6 @@
 2. Support Blurhash/Gradient CSS attribute for a placeholder image
 3. Error tip and retry button to reload the resource
 4. Different syntaxes supported
-5. Support for RSS readers
 6. Support for JavaScript-disabled browsers
 
 ## Install
@@ -34,8 +33,8 @@ lazyload:
   # loadingImg: http://xxx.xxx.com/xxx.jpg, optional, default is https://i.loli.wiki/public/240201/loading.svg
   # intersectionRatio: 0.33 # optional, default is 0.25
   # placeholderRatio: 1.5 # optional, default is 1.5 (3/2)
-  #	showTransition: false # optional, default is true
-  #	errorTipImage: http://xxx.xxx.com/xxx.jpg # optional, default is https://i.loli.wiki/public/240201/error-tip.svg
+  # showTransition: false # optional, default is true
+  # errorTipImage: http://xxx.xxx.com/xxx.jpg # optional, default is https://i.loli.wiki/public/240201/error-tip.svg
 ```
 
 ### 2. Rebuild && Deploy
@@ -81,7 +80,7 @@ npm run clean && npm run build
 ```
 
 ```markdown
-![This is a image $no-lazy](https://abc.com/def.jpg)
+![This is an image $no-lazy](https://abc.com/def.jpg)
 ```
 
 Or
@@ -92,7 +91,7 @@ Or
 
 ### Placeholder image
 
-Supports <url>/<gradient>/blurhash.
+Supports \<url\>/\<gradient\>/blurhash.
 
 `$placeholder=...=placeholder` in `[]`
 
