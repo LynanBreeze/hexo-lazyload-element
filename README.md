@@ -7,6 +7,7 @@
 \*for browsers not support `Intersection Observer` , lazy load is not woking due to I did not integrate polyfill in this plugin to avoid unnecessary script size.
 
 **[DEMO PAGE](https://lynanbreeze.github.io/hexo-lazyload-element/)**
+**[NPM](https://www.npmjs.com/package/hexo-lazyload-element)**
 ![demo screenshot](https://i.imgur.com/QwlUMb2.gif)
 
 ## Features
