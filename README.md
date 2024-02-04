@@ -15,8 +15,8 @@
 ## Features
 
 1. Lazy load for img, video, and iframe
-2. Support Blurhash/Gradient CSS attribute for a placeholder image
-3. Error tip and retry button to reload the resource
+2. Support URL/Gradient CSS/Blurhash for a custom placeholder image
+3. Retry component embeded, for reloading when failed at loading image
 4. Different syntaxes supported
 5. Support for JavaScript-disabled browsers
 
