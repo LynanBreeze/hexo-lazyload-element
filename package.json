@@ -1,6 +1,6 @@
 {
   "name": "hexo-lazyload-element",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Lazyload plugin for elements like img, video and iframe.",
   "main": "index.js",
   "scripts": {
