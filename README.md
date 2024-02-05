@@ -20,7 +20,7 @@
 
 ## Install
 
-```shell intall dependency
+```shell install dependency
 npm install hexo-lazyload-element -S
 ```
 
@@ -146,12 +146,8 @@ const fs = require("fs");
 const feedXML = fs.readFileSync("public/feed.xml", "utf-8");
 
 const format = (content) => {
-  return content.replace(/<span class="lazyload-outer-wrap"((?!<span class="lazyload-outer-wrap").)*(<img(.*?))<\/span>/gi, (str, p1, p2)=>{
-    return p2.replace(/<\/noscript>/gi, '')
-  }).replace(/<span class="lazyload-outer-wrap"((?!<span class="lazyload-outer-wrap").)*(This iframe content need to be loaded by JavaScript.(.*?))<\/span>/gi, (str, p1, p2)=>{
-    return `<br>${p2.replace(/<\/noscript>/gi, '')}<br>`
-  }).replace(/<span class="lazyload-outer-wrap"((?!<span class="lazyload-outer-wrap").)*(<video(.*?))<\/span>/gi, (str, p1, p2)=>{
-    return `<br>${p2.replace(/<\/noscript>/gi, '')}</br>`
+  return content.replace(/<noscript>(<img.*?)<\/noscript>/g, (str, p1) => {
+    return p1;
   })
 };
 
