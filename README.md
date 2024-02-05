@@ -1,7 +1,5 @@
 ## hexo-lazyload-element
 
-## Description
-
 **hexo-lazyload-image** is a plugin for lazyloading elements in post. Implement lazyloading with `Intersection Observer`.
 
 \*for browsers not support `Intersection Observer` , lazy load is not woking due to I did not integrate polyfill in this plugin to avoid unnecessary script size.
@@ -140,16 +138,21 @@ Or use `style`
 
 ## Script for RSS content
 
-Some RSS readers does not recognise content in `<noscript></noscript>`, this script below can extract these `<img>` contents without `<noscript>` tag.
+Some RSS readers do not recognise content in `<noscript></noscript>`, this script below can extract these `<img>` contents without `<noscript>` tag.
 
 ```javascript format-rss.js
 const fs = require("fs");
+
 const feedXML = fs.readFileSync("public/feed.xml", "utf-8");
 
 const format = (content) => {
-  return content.replace(/<noscript>(<img.*?)<\/noscript>/g, (str, imgStr) => {
-    return imgStr;
-  });
+  return content.replace(/<span class="lazyload-outer-wrap"((?!<span class="lazyload-outer-wrap").)*(<img(.*?))<\/span>/gi, (str, p1, p2)=>{
+    return p2.replace(/<\/noscript>/gi, '')
+  }).replace(/<span class="lazyload-outer-wrap"((?!<span class="lazyload-outer-wrap").)*(This iframe content need to be loaded by JavaScript.(.*?))<\/span>/gi, (str, p1, p2)=>{
+    return `<br>${p2.replace(/<\/noscript>/gi, '')}<br>`
+  }).replace(/<span class="lazyload-outer-wrap"((?!<span class="lazyload-outer-wrap").)*(<video(.*?))<\/span>/gi, (str, p1, p2)=>{
+    return `<br>${p2.replace(/<\/noscript>/gi, '')}</br>`
+  })
 };
 
 fs.writeFileSync("public/feed.xml", format(feedXML));
