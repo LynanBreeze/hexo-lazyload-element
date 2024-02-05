@@ -21,7 +21,7 @@
 ## Install
 
 ```shell intall dependency
-npm intsall hexo-lazyload-element -S
+npm install hexo-lazyload-element -S
 ```
 
 ## Usage
