@@ -6,7 +6,8 @@
 
 **[DEMO PAGE](https://lynanbreeze.github.io/hexo-lazyload-element/)**
 
-**[NPM](https://www.npmjs.com/package/hexo-lazyload-element)**
+**[NPM](https://www.npmjs.com/package/hexo-lazyload-element)** 
+[![NPM downloads][npm-downloads]][npm-url]
 
 ![demo screenshot](https://i.imgur.com/QwlUMb2.gif)
 
@@ -166,3 +167,9 @@ fs.writeFileSync("public/feed.xml", format(feedXML));
 ```shell format-rss
 npm run build && npm run format-rss
 ```
+
+## License
+MIT
+
+[npm-url]: https://www.npmjs.com/package/hexo-lazyload-element
+[npm-downloads]: http://img.shields.io/npm/dm/hexo-lazyload-element.svg?style=flat
