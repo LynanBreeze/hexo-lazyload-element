@@ -36,7 +36,7 @@ lazyload:
   # placeholderRatio: 1.5 # optional, default is 1.5 (3/2)
   # showTransition: false # optional, default is true
   # errorTipImage: http://xxx.xxx.com/xxx.jpg # optional, default is https://i.loli.wiki/public/240201/error-tip.svg
-  # showAltText: true # optional, default is false
+  # showAltText: true # optional, default is true
 ```
 
 ### 2. Rebuild && Deploy
