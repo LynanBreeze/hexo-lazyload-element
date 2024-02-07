@@ -31,7 +31,7 @@ npm install hexo-lazyload-element -S
 ```yml _config.yml
 lazyload:
   enable: true
-  # loadingImg: http://xxx.xxx.com/xxx.jpg, optional, default is https://i.loli.wiki/public/240201/loading.svg
+  # loadingImg: http://xxx.xxx.com/xxx.jpg, optional, default is https://i.loli.wiki/public/240207/loading.svg
   # intersectionRatio: 0.33 # optional, default is 0.25
   # placeholderRatio: 1.5 # optional, default is 1.5 (3/2)
   # showTransition: false # optional, default is true
