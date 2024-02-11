@@ -14,7 +14,7 @@
 ## Features
 
 1. Lazy load for img, video, and iframe
-2. Support URL/Gradient CSS/Blurhash for a custom placeholder image
+2. Support [URL](https://developer.mozilla.org/en-US/docs/Web/CSS/url)/[Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient)/[Blurhash](https://blurha.sh/) for a custom placeholder image
 3. Retry component embeded, for reloading when failed at loading image
 4. Different syntaxes supported
 5. Support for JavaScript-disabled browsers
@@ -107,6 +107,11 @@ linear-gradient(to right, #ffa17f, #00223e)
 ```css blurhash
 blurhash:Lb0V#qelf,flg+e-f6flg4g4f5fl
 ```
+
+You can use my [Img-Blurer](https://lynan.cn/static/img-blurer/) to generate blury placeholder image.
+
+![Img-Blurer](https://raw.githubusercontent.com/LynanBreeze/hexo-lazyload-element/main/img-blurer.jpg)
+
 **Example:**
 
 `$placeholder=...=placeholder` in `[]`
