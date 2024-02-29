@@ -108,9 +108,9 @@ linear-gradient(to right, #ffa17f, #00223e)
 blurhash:Lb0V#qelf,flg+e-f6flg4g4f5fl
 ```
 
-You can use my [Img-Blurer](https://lynan.cn/static/img-blurer/) to generate blury placeholder image.
+You can use my [Img-Blurer](https://lynanbreeze.github.io/image-blurrer/) to generate blury placeholder image.
 
-![Img-Blurer](https://raw.githubusercontent.com/LynanBreeze/hexo-lazyload-element/main/img-blurer.jpg)
+![Img-Blurer](https://raw.githubusercontent.com/LynanBreeze/image-blurrer/main/public/img/image-blurrer.jpg)
 
 **Example:**
 
