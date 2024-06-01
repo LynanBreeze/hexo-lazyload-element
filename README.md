@@ -1,6 +1,6 @@
 ## hexo-lazyload-element
 
-**hexo-lazyload-image** is a plugin for lazyloading elements in post. Implement lazyloading with `Intersection Observer`.
+**hexo-lazyload-element** is a plugin for lazyloading elements in post. Implement lazyloading with `Intersection Observer`.
 
 \*for browsers not support `Intersection Observer` , lazy load is not woking due to I did not integrate polyfill in this plugin to avoid unnecessary script size.
 
@@ -172,6 +172,9 @@ fs.writeFileSync("public/feed.xml", format(feedXML));
 ```shell format-rss
 npm run build && npm run format-rss
 ```
+
+## Credit
+This plugin is inspired by https://github.com/Troy-Yang/hexo-lazyload-image.
 
 ## License
 MIT
